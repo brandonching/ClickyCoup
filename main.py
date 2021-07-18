@@ -1,26 +1,33 @@
-import mysql.connector
+import psycopg2
 
-cnx = mysql.connector.connect(user='scc_scrut',
-                              password='SCC!scrut',
-                              host='mysql.solarcarchallenge.org',
-                              database='scrutineering')
-cursor = cnx.cursor(buffered=True)
-cnx.autocommit = True
-
-
-def marklap(day, team_id, time_stamp, judge):
-    query = "INSERT INTO score_rawclickydata_mysql " \
-            "(day, team_id, time_stamp, judge) VALUES " \
-            "(%s, %s, %s, %s)"
-    cursor.execute(query, (day, team_id, time_stamp, judge))
+DBname='dropfu2fh9s54'
+DBuser='twtdpbrncuknog'
+DBpassword='750683d7f02a5706e0aef1cad6eef3d4085b2766e51253a52c59a17556d552ad'
+DBhost='ec2-174-129-236-147.compute-1.amazonaws.com'
+DBport='5432'
 
 
-def undo(day, team_id, time_stamp, judge):
-    query = "UPDATE score_rawclickydata_mysql " \
-            "SET append='UNDO' " \
-            "WHERE day=%s & team_id=%s & DATE_SUB(time_stamp=%s, INTERVAL 2 HOUR) & judge=%s"
-    cursor.execute(query, (day, team_id, time_stamp, judge))
+conn = psycopg2.connect(dbname=DBname,
+                        user=DBuser,
+                        password=DBpassword,
+                        host=DBhost,
+                        port=DBport,
+                        connect_timeout='10')
+cur = conn.cursor()
+conn.autocommit = True
 
 
-marklap(1, 7, '2021-08-12 12:13:55', 'Brandon')
-undo(1, 7, '2021-08-12 12:13:55', 'Brandon')
+def mark_lap(day, team_id, time_stamp, judge):
+    cur = conn.cursor()
+    try:
+        query = "INSERT INTO public.score_rawclickeydata (day, team_id, time_stamp, judge) VALUES (%s, %s, %s, %s)"
+        cur.execute(query, (day, team_id, time_stamp, judge))
+        cur.close()
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
+
+
+mark_lap(4, 13, '2021-07-18 23:07:47.628037', 'William')

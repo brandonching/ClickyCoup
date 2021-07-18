@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Solar Car Challenge" uuid="74ca2c17-bb43-4d7f-a512-dbc7a261fca6">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql.solarcarchallenge.org:3306/scrutineering</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="dropfu2fh9s54@ec2-174-129-236-147.compute-1.amazonaws.com" uuid="7cad0ed2-0ad6-4d92-9836-3a6cc3ae3e86">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-174-129-236-147.compute-1.amazonaws.com:5432/dropfu2fh9s54</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -5,11 +5,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d31766d3-64ef-4b98-81ce-f541a7868b7e" name="Default Changelist" comment="" />
+    <list default="true" id="d31766d3-64ef-4b98-81ce-f541a7868b7e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,8 +34,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -60,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1626580470778</updated>
       <workItem from="1626580500493" duration="4388000" />
-      <workItem from="1626584974539" duration="9000" />
+      <workItem from="1626584974539" duration="1202000" />
+      <workItem from="1626609371396" duration="13057000" />
     </task>
     <servers />
   </component>
@@ -110,44 +124,52 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626580772336">
+    <state x="354" y="298" key="#SQL_Resolution_Scopes" timestamp="1626619693204">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1626580772336" />
-    <state width="1398" height="374" key="GridCell.Tab.0.bottom" timestamp="1626584945405">
+    <state x="354" y="298" key="#SQL_Resolution_Scopes/0.0.1440.900@0.0.1440.900" timestamp="1626619693204" />
+    <state x="521" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626619737809">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="374" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1626584945405" />
-    <state width="1398" height="374" key="GridCell.Tab.0.center" timestamp="1626584945405">
+    <state x="521" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1626619737809" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1626625158660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="374" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1626584945405" />
-    <state width="1398" height="374" key="GridCell.Tab.0.left" timestamp="1626584945404">
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1626625158660" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1626625158659">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="374" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1626584945403" />
-    <state width="1398" height="374" key="GridCell.Tab.0.right" timestamp="1626584945405">
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1626625158659" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1626625158658">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="374" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1626584945405" />
-    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1626580750420">
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1626625158658" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1626625158659">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="228" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1626580750420" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1626581245423">
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1626625158659" />
+    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1626615899501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1626581245423" />
+    <state width="228" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1626615899501" />
+    <state x="462" y="174" key="RollbackChangesDialog" timestamp="1626610053786">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="462" y="174" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1626610053786" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1626618016769">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1626618016769" />
     <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626584889403">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1626584889403" />
-    <state x="542" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1626582642303">
+    <state x="542" y="157" width="523" height="516" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1626612632497">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="542" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1626582642303" />
+    <state x="542" y="157" width="523" height="516" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1626612632497" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ClickyCoup$main.coverage" NAME="main Coverage Results" MODIFIED="1626584384026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ClickyCoup$main.coverage" NAME="main Coverage Results" MODIFIED="1626625158648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
