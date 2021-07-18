@@ -29,5 +29,16 @@ def mark_lap(day, team_id, time_stamp, judge):
         if conn is not None:
             conn.close()
 
+def mark_lap(day, team_id, time_stamp, judge):
+    cur = conn.cursor()
+    try:
+        query = "INSERT INTO public.score_rawundodata (day, team_id, time_stamp, judge) VALUES (%s, %s, %s, %s)"
+        cur.execute(query, (day, team_id, time_stamp, judge))
+        cur.close()
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
 
 mark_lap(4, 13, '2021-07-18 23:07:47.628037', 'William')
