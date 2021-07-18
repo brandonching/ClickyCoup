@@ -29,7 +29,7 @@ def mark_lap(day, team_id, time_stamp, judge):
         if conn is not None:
             conn.close()
 
-def mark_lap(day, team_id, time_stamp, judge):
+def undo_lap(day, team_id, time_stamp, judge):
     cur = conn.cursor()
     try:
         query = "INSERT INTO public.score_rawundodata (day, team_id, time_stamp, judge) VALUES (%s, %s, %s, %s)"
